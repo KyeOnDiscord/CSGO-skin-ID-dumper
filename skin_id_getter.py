@@ -74,4 +74,4 @@ with io.open('item_index.txt', 'w', encoding="utf-8") as outfile:
     for n in sorted(skindata):
         tag = skindata[n]['description_tag']
 
-        outfile.write("%s: %s\n" % (n, namedata[tag.lower()]))
+        outfile.write("%s:%s\n" % (n, namedata[tag.lower()]))
